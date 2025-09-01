@@ -35,6 +35,11 @@ const ExclusiveOffers = () => {
                 src={assets.arrowIcon} alt="" />
             </button>
 
+
+
+
+
+
         </div>
        ))}
     </div>
