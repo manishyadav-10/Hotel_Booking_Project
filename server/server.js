@@ -17,7 +17,8 @@ connectDB();
 connectCloudinary();
 
 const app = express()
-app.use(cors({origin:process.env.CLIENT_URL}))  // Enable Cross-Origin Resourse Sharing
+//process.env.CLIENT_URL
+app.use(cors({origin:'https://hotel-booking-project-beta.vercel.app'}))  // Enable Cross-Origin Resourse Sharing
 
 // API to listen to Stripe Webhooks
 app.post('/api/stripe', express.raw({type:"application/json"}),stripeWebhooks)
