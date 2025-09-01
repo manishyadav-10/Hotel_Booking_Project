@@ -6,6 +6,11 @@ import transporter from '../configs/nodemailer.js';
 import stripe from 'stripe';
 
 
+
+
+
+
+
 // Function to check Avialability of Room
 
 export const checkAvailability = async ({ checkInDate, checkOutDate, room }) => {
