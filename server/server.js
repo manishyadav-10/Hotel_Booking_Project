@@ -1,5 +1,5 @@
 import express from 'express'
-import "dotenv/config";
+// import "dotenv/config";
 import cors from 'cors';
 import connectDB from './configs/db.js';
 import {clerkMiddleware} from'@clerk/express';
@@ -10,6 +10,8 @@ import connectCloudinary from './configs/cloudinary.js';
 import roomRouter from './routes/roomRoutes.js';
 import bookingRouter from './routes/bookingRoutes.js';
 import { stripeWebhooks } from './controllers/stripeWebhooks.js';
+import dotenv from 'dotenv'
+dotenv.config();
 
 connectDB();
 connectCloudinary();
